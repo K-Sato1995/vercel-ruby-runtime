@@ -2,8 +2,7 @@ require_relative '../app/main'
 
 Handler = Proc.new do |request, response|
   app = MyApp.new
-
-  puts "Requestttttt: #{request.request_method} #{request.path} #{request.query_string} #{request.body}"
+  # puts "Requestttttt: #{request.request_method} #{request.path} #{request.query_string} #{request.body}"
   env = {
     'REQUEST_METHOD' => request.request_method,
     'PATH_INFO' => request.path,
