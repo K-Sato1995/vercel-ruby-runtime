@@ -1,13 +1,58 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cowsay (0.3.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
+    cgi (0.4.1)
+    csv (3.3.0)
+    dotenv (3.1.4)
+    erb (4.0.4)
+      cgi (>= 0.3.3)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.5)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
+    mustermann (3.0.3)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.7.4)
+    puma (6.4.3)
+      nio4r (~> 2.0)
+    rack (3.1.8)
+    rack-protection (4.0.0)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+    rackup (2.2.0)
+      rack (>= 3)
+    ruby2_keywords (0.0.5)
+    sinatra (4.0.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
+      tilt (~> 2.0)
+    supabase (0.1.0)
+    tilt (2.4.0)
 
 PLATFORMS
-  arm64-darwin-21
+  arm64-darwin-22
+  ruby
 
 DEPENDENCIES
-  cowsay (~> 0.3.0)
+  dotenv
+  erb (~> 4.0)
+  httparty
+  puma (~> 6.4)
+  rackup (~> 2.2)
+  sinatra (~> 4.0)
+  supabase
+
+RUBY VERSION
+   ruby 3.3.6p108
 
 BUNDLED WITH
-   2.3.7
+   2.5.23
